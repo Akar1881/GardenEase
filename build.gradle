@@ -1,0 +1,84 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }
+    maven {
+        url = "https://maven.azureaaron.net/releases"
+        content {
+            includeGroup "net.azureaaron"
+        }
+    }
+    maven {
+        url = "https://maven.notenoughupdates.org/releases"
+        content {
+            includeGroup "org.notenoughupdates.moulconfig"
+        }
+    }
+    maven {
+        url = "https://maven.isxander.dev/releases"
+        content {
+            includeGroup "dev.isxander"
+            includeGroup "org.quiltmc.parsers"
+        }
+    }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/gardenease.accesswidener")
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    implementation "com.terraformersmc:modmenu:${project.modmenu_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 25
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+    }
+}

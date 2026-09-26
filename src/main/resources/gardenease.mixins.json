@@ -1,0 +1,20 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "me.jojo.gardenease.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "client": [
+        "MinecraftClientMixin",
+                "LevelRendererMixin",
+        "ChatHudMixin",
+        "ClientPlayNetworkHandlerMixin",
+        "ClientPlayerEntityMixin",
+        "LivingEntityVelocityMixin",
+        "LivingEntityMixin",
+        "PlayerInventoryMixin",
+        "PlayerListHudMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

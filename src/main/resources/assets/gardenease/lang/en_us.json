@@ -1,0 +1,54 @@
+{
+    "gardenease.config.title": "GardenEase",
+    
+    "key.gardenease.emergency_stop": "Stop Farming Key",
+    "key.gardenease.quick_resume": "Quick Resume Key",
+    "key.gardenease.start_profile": "Start Profile Farm Key",
+    "key.category.gardenease.keys": "GardenEase",
+    "subtitles.gardenease.cookie_click": "Cookie clicks",
+    
+    "gardenease.category.dashboard": "Dashboard",
+    "gardenease.category.groups": "Farm Groups",
+    "gardenease.category.terminal": "Terminal",
+    "gardenease.category.commands": "Commands",
+    "gardenease.category.settings": "Settings",
+    "gardenease.category.about": "About",
+    "gardenease.category.profiles": "Profiles",
+
+    "gardenease.profile.name": "Farm Profile",
+    "gardenease.profile.endx": "Farm End X",
+    "gardenease.profile.endy": "Farm End Y",
+    "gardenease.profile.endz": "Farm End Z",
+    
+    "gardenease.option.enabled": "Macro Enabled",
+    "gardenease.option.loop": "Loop Mode",
+    "gardenease.option.emergency.enabled": "Enable Emergency Hotkey",
+    "gardenease.option.emergency.hotkey": "Emergency Hotkey",
+    "gardenease.option.visual.enabled": "Enable Visual Watcher",
+    "gardenease.option.visual.threshold": "Sensitivity Threshold",
+    "gardenease.option.log.enabled": "Enable Log Monitor",
+    "gardenease.option.log.path": "Log Path",
+    "gardenease.option.chat.enabled": "Enable Chat Response",
+    
+    "gardenease.group.name": "Group Name",
+    "gardenease.group.description": "Description",
+    "gardenease.group.loopCommand": "Loop Command",
+    
+    "gardenease.lane.name": "Lane Name",
+    "gardenease.lane.duration": "Duration (sec)",
+    "gardenease.lane.pattern": "Movement Pattern",
+    
+    "gardenease.pattern.none": "None",
+    "gardenease.pattern.w": "Forward (W)",
+    "gardenease.pattern.a": "Left (A)",
+    "gardenease.pattern.s": "Backward (S)",
+    "gardenease.pattern.d": "Right (D)",
+    "gardenease.pattern.wa": "Forward-Left (W+A)",
+    "gardenease.pattern.wd": "Forward-Right (W+D)",
+    "gardenease.pattern.sa": "Backward-Left (S+A)",
+    "gardenease.pattern.sd": "Backward-Right (S+D)",
+    
+    "gardenease.status.ready": "Ready",
+    "gardenease.status.running": "Running",
+    "gardenease.status.stopped": "Stopped"
+}

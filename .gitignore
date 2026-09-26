@@ -1,0 +1,40 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Fabric / Minecraft
+run/
+logs/
+.minecraft/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp and editor files
+*.tmp
+*~
+*.swp
+
+# Misc
+.gradle-local/

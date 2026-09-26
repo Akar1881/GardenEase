@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "gardenease",
+    "version": "${version}",
+    "name": "GardenEase",
+    "description": "A Fabric mod for cozy farming automation.",
+    "authors": [
+        "JoJo"
+    ],
+    "contact": {
+        "sources": "https://github.com/JoJo/GardenEase"
+    },
+    "license": "GPL-3.0",
+    "icon": "assets/gardenease/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "me.jojo.gardenease.GardenEase"
+        ],
+        "modmenu": [
+            "me.jojo.gardenease.compat.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "gardenease.mixins.json"
+    ],
+    "accessWidener": "gardenease.accesswidener",
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "minecraft": ">=26.2- <26.3-",
+        "java": ">=25",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "modmenu": "*"
+    }
+}
